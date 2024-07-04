@@ -43,7 +43,9 @@ public class AlignTogether {
 		  WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(6));
 		  WebElement flagsetting = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='selected-flag']")));
 		  flagsetting.click();
-
+		 
+		  WebElement indianFlag = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='India (भारत)']")));
+		  indianFlag.click();
 	}
 	public void closeBrowser() {
 		driver.navigate().refresh();
