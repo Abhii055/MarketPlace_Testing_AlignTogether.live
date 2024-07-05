@@ -57,6 +57,8 @@ public class AlignTogether {
 	public void loginCredInput() {
 		driver.findElement(By.xpath("//div[@class='allow-dropdown intl-tel-input']/input[@placeholder='081234 56789']")).sendKeys("hichka@mailinator.com");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Hichka");
+		
+		driver.findElement(By.xpath("//div[@class='mt-1']/button/span[text()='Login']")).click();
 	}
 
 	public void closeBrowser() {
