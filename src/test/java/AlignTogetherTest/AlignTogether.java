@@ -15,7 +15,7 @@ public class AlignTogether {
 	String url ="https://aligntogether.live/";
 	WebDriver driver;
 
-	@Test
+	@Test(priority  = '1')
 	public void invokeBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\abhin\\eclipse-workspace\\libs\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -45,17 +45,19 @@ public class AlignTogether {
 	
 	@Test(dependsOnMethods = "loginPageRedirect")
 	public void login() {
-		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement flagsetting = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[1]/div/div/div/div[1]/div/div/div/div[1]/input")));
+		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement flagsetting = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='iti-flag us']")));
 		flagsetting.click();
 
 		WebElement indianFlag = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='India (भारत)']")));
 		indianFlag.click();
-	
-	driver.findElement(By.xpath("//div[@class='flag-container']")).sendKeys("hichka@mailinator.com");
-	driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Hichka");
 	}
 	
+	@Test(dependsOnMethods = "login")
+	public void loginCredInput() {
+		driver.findElement(By.xpath("//div[@class='allow-dropdown intl-tel-input']/input[@placeholder='081234 56789']")).sendKeys("hichka@mailinator.com");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Hichka");
+	}
 
 	public void closeBrowser() {
 		driver.navigate().refresh();
