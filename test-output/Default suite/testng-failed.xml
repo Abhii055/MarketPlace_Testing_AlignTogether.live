@@ -5,7 +5,9 @@
     <classes>
       <class name="AlignTogetherTest.AlignTogether">
         <methods>
+          <include name="loginCredInput"/>
           <include name="sessionBookingPage"/>
+          <include name="confirmUserName"/>
           <include name="booking"/>
           <include name="loginPageRedirect"/>
           <include name="invokeBrowser"/>

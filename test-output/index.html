@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\abhin\AppData\Local\Temp\testng-eclipse--1468070850\testng-customsuite.xml</span>
+                    <span>C:\Users\abhin\AppData\Local\Temp\testng-eclipse--474704104\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="AlignTogetherTest.AlignTogether" class="method navigator-link" hash-for-method="booking">booking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AlignTogetherTest.AlignTogether" class="method navigator-link" hash-for-method="confirmUserName">confirmUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AlignTogetherTest.AlignTogether" class="method navigator-link" hash-for-method="confirmationDone">confirmationDone</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,6 +168,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="confirmUserName">
+                  </a> <!-- confirmUserName -->
+                  <span class="method-name">confirmUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirmationDone">
+                  </a> <!-- confirmationDone -->
+                  <span class="method-name">confirmationDone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="invokeBrowser">
                   </a> <!-- invokeBrowser -->
                   <span class="method-name">invokeBrowser</span>
@@ -196,7 +220,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\abhin\AppData\Local\Temp\testng-eclipse--1468070850\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\abhin\AppData\Local\Temp\testng-eclipse--474704104\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -245,36 +269,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invokeBrowser')
 data.setCell(0, 2, 'AlignTogetherTest.AlignTogether')
-data.setCell(0, 3, 14047);
+data.setCell(0, 3, 13798);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'booking')
 data.setCell(1, 2, 'AlignTogetherTest.AlignTogether')
-data.setCell(1, 3, 2050);
+data.setCell(1, 3, 3165);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
+data.setCell(2, 1, 'loginPageRedirect')
 data.setCell(2, 2, 'AlignTogetherTest.AlignTogether')
-data.setCell(2, 3, 980);
+data.setCell(2, 3, 2011);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginPageRedirect')
+data.setCell(3, 1, 'confirmUserName')
 data.setCell(3, 2, 'AlignTogetherTest.AlignTogether')
-data.setCell(3, 3, 705);
+data.setCell(3, 3, 1251);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginCredInput')
+data.setCell(4, 1, 'login')
 data.setCell(4, 2, 'AlignTogetherTest.AlignTogether')
-data.setCell(4, 3, 469);
+data.setCell(4, 3, 1029);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'sessionBookingPage')
+data.setCell(5, 1, 'confirmationDone')
 data.setCell(5, 2, 'AlignTogetherTest.AlignTogether')
-data.setCell(5, 3, 141);
+data.setCell(5, 3, 692);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginCredInput')
+data.setCell(6, 2, 'AlignTogetherTest.AlignTogether')
+data.setCell(6, 3, 458);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'sessionBookingPage')
+data.setCell(7, 2, 'AlignTogetherTest.AlignTogether')
+data.setCell(7, 3, 246);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -307,23 +339,31 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sessionBookingPage</span>
-                <span class="method-start">14066 ms</span>
+                <span class="method-start">13819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">booking</span>
-                <span class="method-start">14214 ms</span>
+                <span class="method-start">14071 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginPageRedirect</span>
-                <span class="method-start">16264 ms</span>
+                <span class="method-start">17236 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">16977 ms</span>
+                <span class="method-start">19251 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginCredInput</span>
-                <span class="method-start">17967 ms</span>
+                <span class="method-start">20287 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmUserName</span>
+                <span class="method-start">20750 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">confirmationDone</span>
+                <span class="method-start">22001 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
