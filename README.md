@@ -1,0 +1,1 @@
+This project contains an automation script that first invoke the AlignTogether.live (FREELANCER_MARKETPLACE) and then click on the book session button to book a session which redirect it to the page contains multiple services ,  then we select any first service without doing the login then visit to the seller(the)
