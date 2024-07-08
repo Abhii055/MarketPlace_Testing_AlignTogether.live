@@ -85,8 +85,6 @@ public class AlignTogether {
 		driver.close();
 	}
 }
-
-
 // Trying to login but was unable to git in(unknown error kinds unable to fetch the xpath due  to dynamic nature i guess)
 //public void loginUser(){
 //	driver.navigate().refresh();
