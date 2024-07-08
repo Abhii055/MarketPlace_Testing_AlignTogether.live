@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-08T19:11:55 IST" name="Default suite" finished-at="2024-07-08T19:12:16 IST" duration-ms="20947">
+  <suite started-at="2024-07-08T19:47:23 IST" name="Default suite" finished-at="2024-07-08T19:47:44 IST" duration-ms="20575">
     <groups>
     </groups>
-    <test started-at="2024-07-08T19:11:55 IST" name="Default test" finished-at="2024-07-08T19:12:16 IST" duration-ms="20947">
+    <test started-at="2024-07-08T19:47:23 IST" name="Default test" finished-at="2024-07-08T19:47:44 IST" duration-ms="20575">
       <class name="AlignTogetherTest.AlignTogether">
-        <test-method signature="invokeBrowser()[pri:1, instance:AlignTogetherTest.AlignTogether@25ce9dc4]" started-at="2024-07-08T19:11:55 IST" name="invokeBrowser" finished-at="2024-07-08T19:12:12 IST" duration-ms="17048" status="PASS">
+        <test-method signature="invokeBrowser()[pri:1, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:23 IST" name="invokeBrowser" finished-at="2024-07-08T19:47:36 IST" duration-ms="12828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="sessionBookingPage()[pri:0, instance:AlignTogetherTest.AlignTogether@25ce9dc4]" started-at="2024-07-08T19:12:12 IST" name="sessionBookingPage" finished-at="2024-07-08T19:12:12 IST" depends-on-methods="AlignTogetherTest.AlignTogether.invokeBrowser" duration-ms="105" status="PASS">
+        <test-method signature="sessionBookingPage()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:36 IST" name="sessionBookingPage" finished-at="2024-07-08T19:47:36 IST" depends-on-methods="AlignTogetherTest.AlignTogether.invokeBrowser" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sessionBookingPage -->
-        <test-method signature="booking()[pri:0, instance:AlignTogetherTest.AlignTogether@25ce9dc4]" started-at="2024-07-08T19:12:12 IST" name="booking" finished-at="2024-07-08T19:12:14 IST" depends-on-methods="AlignTogetherTest.AlignTogether.sessionBookingPage" duration-ms="1881" status="PASS">
+        <test-method signature="booking()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:36 IST" name="booking" finished-at="2024-07-08T19:47:39 IST" depends-on-methods="AlignTogetherTest.AlignTogether.sessionBookingPage" duration-ms="2496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- booking -->
-        <test-method signature="loginPageRedirect()[pri:0, instance:AlignTogetherTest.AlignTogether@25ce9dc4]" started-at="2024-07-08T19:12:14 IST" name="loginPageRedirect" finished-at="2024-07-08T19:12:14 IST" depends-on-methods="AlignTogetherTest.AlignTogether.booking" duration-ms="631" status="PASS">
+        <test-method signature="loginPageRedirect()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:39 IST" name="loginPageRedirect" finished-at="2024-07-08T19:47:39 IST" depends-on-methods="AlignTogetherTest.AlignTogether.booking" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageRedirect -->
-        <test-method signature="login()[pri:0, instance:AlignTogetherTest.AlignTogether@25ce9dc4]" started-at="2024-07-08T19:12:14 IST" name="login" finished-at="2024-07-08T19:12:15 IST" depends-on-methods="AlignTogetherTest.AlignTogether.loginPageRedirect" duration-ms="952" status="PASS">
+        <test-method signature="login()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:39 IST" name="login" finished-at="2024-07-08T19:47:40 IST" depends-on-methods="AlignTogetherTest.AlignTogether.loginPageRedirect" duration-ms="835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="loginCredInput()[pri:0, instance:AlignTogetherTest.AlignTogether@25ce9dc4]" started-at="2024-07-08T19:12:15 IST" name="loginCredInput" finished-at="2024-07-08T19:12:16 IST" depends-on-methods="AlignTogetherTest.AlignTogether.login" duration-ms="270" status="PASS">
+        <test-method signature="loginCredInput()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:40 IST" name="loginCredInput" finished-at="2024-07-08T19:47:40 IST" depends-on-methods="AlignTogetherTest.AlignTogether.login" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginCredInput -->
+        <test-method signature="confirmUserName()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:40 IST" name="confirmUserName" finished-at="2024-07-08T19:47:43 IST" depends-on-methods="AlignTogetherTest.AlignTogether.loginCredInput" duration-ms="2733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmUserName -->
+        <test-method signature="confirmationDone()[pri:0, instance:AlignTogetherTest.AlignTogether@27406a17]" started-at="2024-07-08T19:47:43 IST" name="confirmationDone" finished-at="2024-07-08T19:47:44 IST" depends-on-methods="AlignTogetherTest.AlignTogether.confirmUserName" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmationDone -->
       </class> <!-- AlignTogetherTest.AlignTogether -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
