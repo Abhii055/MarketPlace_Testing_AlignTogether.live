@@ -49,13 +49,14 @@ public class AlignTogether {
 		WebElement flagsetting = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='iti-flag us']")));
 		flagsetting.click();
 
-		WebElement indianFlag = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='India (भारत)']")));
+		WebDriverWait  wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement indianFlag = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='India (भारत)']")));
 		indianFlag.click();
 	}
 	
 	@Test(dependsOnMethods = "login")
 	public void loginCredInput() {
-		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='allow-dropdown intl-tel-input']/input[@placeholder='081234 56789']")));
 		username.sendKeys("hichka@mailinator.com");
 
