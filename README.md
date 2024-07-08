@@ -1,1 +1,19 @@
-This project contains an automation script that first invoke the AlignTogether.live (FREELANCER_MARKETPLACE) and then click on the book session button to book a session which redirect it to the page contains multiple services ,  then we select any first service in the marketplace and try to contact the seller which redirect it to the login page which is necessary to book a session or to contact seller then in the login page we select the flag as india in order to send number for login and pass the username and password then we END the process by  confirming the username of the user(id it's not taken otherwise we will change it) and URL.
+**Invoke the AlignTogether.live (FREELANCER_MARKETPLACE):**
+-Access the AlignTogether.live website.
+
+**Click on the Book Session Button:**
+-Click the "Book Session" button, which redirects to a page containing multiple services.
+
+**Select the First Service:**
+-Choose the first service in the marketplace.
+
+**Contact the Seller:**
+-Attempt to contact the seller, which redirects to the login page.
+
+**Login to Book a Session or Contact the Seller:**
+-On the login page, select India as the country to send the number for login.
+-Enter the username and password.
+
+**Confirm the Username and URL:**
+-Confirm the username of the user (if it's not taken, otherwise change it).
+-Confirm the URL.
