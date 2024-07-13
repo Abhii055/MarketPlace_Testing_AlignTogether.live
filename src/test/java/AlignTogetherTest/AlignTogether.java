@@ -66,18 +66,18 @@ public class AlignTogether {
 	}
 
 	// ---ONly REQUIRED ONCE WHILE CREATING NEW USER, ONCE IT IS SET NO NEED TO RUN THE OTHERWISE ALL THE UPCOMING TESTCASES WILL BE IGNORED-----------
-	@Test(dependsOnMethods ="loginCredInput")
-	public void confirmUserName() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement confirmBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn ant-btn-primary style_ConfirmBtn__0OFqM']")));
-		confirmBtn.click();
-	}
-	@Test(dependsOnMethods ="confirmUserName")
-	public void confirmationDone() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		WebElement confirmationBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button/span[text()='Yes']")));
-		confirmationBtn.click();
-}
+//	@Test(dependsOnMethods ="loginCredInput")
+//	public void confirmUserName() {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		WebElement confirmBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn ant-btn-primary style_ConfirmBtn__0OFqM']")));
+//		confirmBtn.click();
+//	}
+//	@Test(dependsOnMethods ="confirmUserName")
+//	public void confirmationDone() {
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//		WebElement confirmationBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button/span[text()='Yes']")));
+//		confirmationBtn.click();
+//}
 	
 //	@Test(dependsOnMethods="loginCredInput")
 	public void closeBrowser() {
