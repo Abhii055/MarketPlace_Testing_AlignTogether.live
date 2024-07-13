@@ -32,7 +32,7 @@ public class AlignTogether {
 	@Test(dependsOnMethods = "sessionBookingPage")
 	public void booking() {	
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement card = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div/main/div/div[2]/div[1]/div/div/div/div/div/div[3]/a/div/div/div[3]/div/a")));
+		WebElement card = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ant-col ServiceCard_gap__mDp8q ant-col-xs-0 ant-col-sm-0 ant-col-md-24']")));
 		card.click();}
 	
 	
@@ -49,8 +49,8 @@ public class AlignTogether {
 		WebElement flagsetting = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='iti-flag us']")));
 		flagsetting.click();
 
-		WebDriverWait  wait2 = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement indianFlag = wait2.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='India (भारत)']")));
+	
+		WebElement indianFlag = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='India (भारत)']")));
 		indianFlag.click();
 	}
 	
@@ -58,9 +58,9 @@ public class AlignTogether {
 	public void loginCredInput() {
 		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='allow-dropdown intl-tel-input']/input[@placeholder='081234 56789']")));
-		username.sendKeys("Test2@mailinator.com");
+		username.click();		username.sendKeys("hichkaa@mailinator.com");
 
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Test2@123");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("hichkaa");
 		
 		driver.findElement(By.xpath("//div[@class='mt-1']/button/span[text()='Login']")).click();
 	}

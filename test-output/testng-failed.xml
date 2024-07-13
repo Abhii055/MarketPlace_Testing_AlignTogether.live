@@ -7,9 +7,12 @@
         <methods>
           <include name="loginCredInput"/>
           <include name="sessionBookingPage"/>
+          <include name="confirmUserName"/>
+          <include name="confirmationDone"/>
           <include name="booking"/>
           <include name="loginPageRedirect"/>
           <include name="invokeBrowser"/>
+          <include name="login"/>
         </methods>
       </class> <!-- AlignTogetherTest.AlignTogether -->
     </classes>
