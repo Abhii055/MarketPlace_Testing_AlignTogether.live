@@ -44,7 +44,8 @@ public class AlignTogether {
 	
 	
 	@Test(dependsOnMethods = "loginPageRedirect")
-	public void login() {
+	public void login()throws Exception {
+Thread.sleep(6000);
 		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement flagsetting = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='iti-flag us']")));
 		flagsetting.click();
@@ -55,32 +56,35 @@ public class AlignTogether {
 	}
 	
 	@Test(dependsOnMethods = "login")
-	public void loginCredInput() {
-		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	public void loginCredInput()throws Exception {
+		WebDriverWait  wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='allow-dropdown intl-tel-input']/input[@placeholder='081234 56789']")));
-		username.click();		username.sendKeys("hichkaa@mailinator.com");
+		username.click();		
+		username.sendKeys("nedodebomibe@jollyfree.com\r\n"
+				+ "");
 
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("hichkaa");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("hippoo");
 		
 		driver.findElement(By.xpath("//div[@class='mt-1']/button/span[text()='Login']")).click();
 	}
 
 	// ---ONly REQUIRED ONCE WHILE CREATING NEW USER, ONCE IT IS SET NO NEED TO RUN THE OTHERWISE ALL THE UPCOMING TESTCASES WILL BE IGNORED-----------
-//	@Test(dependsOnMethods ="loginCredInput")
-//	public void confirmUserName() {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		WebElement confirmBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn ant-btn-primary style_ConfirmBtn__0OFqM']")));
-//		confirmBtn.click();
-//	}
-//	@Test(dependsOnMethods ="confirmUserName")
-//	public void confirmationDone() {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//		WebElement confirmationBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button/span[text()='Yes']")));
-//		confirmationBtn.click();
-//}
+	@Test(dependsOnMethods ="loginCredInput")
+	public void confirmUserName() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement confirmBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn ant-btn-primary style_ConfirmBtn__0OFqM']")));
+		confirmBtn.click();
+	}
+	@Test(dependsOnMethods ="confirmUserName")
+	public void confirmationDone() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebElement confirmationBtn  =  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button/span[text()='Yes']")));
+		confirmationBtn.click();
+}
 	
-//	@Test(dependsOnMethods="loginCredInput")
-	public void closeBrowser() {
+	@Test(dependsOnMethods="confirmationDone")
+	public void closeBrowser() throws  Exception{
+		Thread.sleep(6000);
 		driver.navigate().refresh();
 		driver.close();
 	}
